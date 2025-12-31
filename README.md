@@ -9,8 +9,7 @@ This project implements a Power BI analytics solution for hospitality performanc
 
 The solution uses a star-schema design with five core tables:
 
-- dim_date
-  Provides calendar attributes including date, month-year, week number, and day type (weekday or weekend).
+- dim_date: Provides calendar attributes including date, month-year, week number, and day type (weekday or weekend).
 - dim_hotels
   Contains property-level information such as property ID, property name, category (Luxury or Business), and city.
 - dim_rooms
