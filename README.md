@@ -9,74 +9,64 @@ This project implements a Power BI analytics solution for hospitality performanc
 
 The solution uses a star-schema design with five core tables:
 
-- dim_date: Provides calendar attributes including date, month-year, week number, and day type (weekday or weekend).
-- dim_hotels
+- __dim_date__: Provides calendar attributes including date, month-year, week number, and day type (weekday or weekend).
+- __dim_hotels__:
   Contains property-level information such as property ID, property name, category (Luxury or Business), and city.
-- dim_rooms
+- __dim_rooms__:
   Defines room types and their corresponding room classes.
 
-fact_bookings
-Stores transactional booking-level data including booking status, booking platform, guest count, ratings, and revenue details.
+- __fact_bookings__: Stores transactional booking-level data including booking status, booking platform, guest count, ratings, and revenue details.
 
-fact_aggregated_bookings
+- ____fact_aggregated_bookings__:
 Stores daily aggregated capacity and successful bookings by property and room type, used for occupancy and RevPAR calculations.
 
 Relationships are defined using property ID, room category, and date fields to ensure correct filter flow and accurate aggregations.
 
-Key Metrics and Logic
+## Key Metrics and Logic
 
 Business metrics are implemented using DAX measures to ensure correct behavior under all filter contexts. Core metrics include:
 
-Total Revenue and Realized Revenue based on booking status rules
-
-ADR (Average Daily Rate)
-
-Occupancy Percentage
-
-RevPAR (Revenue per Available Room)
-
-Cancellation Percentage
-
-Realization Percentage
-
-Average Customer Rating
+- Total Revenue and Realized Revenue based on booking status rules
+- ADR (Average Daily Rate)
+- Occupancy Percentage
+- RevPAR (Revenue per Available Room)
+- Cancellation Percentage
+- Realization Percentage
+- Average Customer Rating
 
 Revenue realization logic accounts for partial revenue loss on cancelled bookings and full realization for checked-out and no-show bookings.
 
-Dashboard Features
+## Dashboard Features 
 
 The dashboard provides:
 
-KPI cards for high-level performance tracking
-
-Trend analysis by week for revenue, occupancy, and RevPAR
-
-Category-level revenue distribution
-
-Property-level performance tables with conditional formatting
-
-Slicers for city, property, room class, date, and booking platform
+- KPI cards for high-level performance tracking
+- Trend analysis by week for revenue, occupancy, and RevPAR
+- Category-level revenue distribution
+- Property-level performance tables with conditional formatting
+- Slicers for city, property, room class, date, and booking platform
 
 The design supports both summary-level monitoring and detailed drill-down analysis.
 
-Tools and Technologies
+## Dashboard Preview
 
-Power BI
+``` 
 
-Power Query for data transformation
+This section shows the final Power BI dashboard built on the hospitality bookings dataset. It highlights key performance indicators, trends, and property-level metrics used for analysis.
 
-DAX for metric calculation
+IMAGE HERE 
+```
 
-Star-schema data modeling
+## Tools and Technologies
 
-Usage
-
+- Power BI
+- Power Query for data transformation
+- DAX for metric calculation
+- Star-schema data modeling
+## Usage
 This project can be used as a reference for:
-
-Hospitality and revenue analytics use cases
-
-Power BI data modeling and DAX implementation
-
-Building KPI-driven dashboards from transactional datasets
+- Hospitality and revenue analytics use cases
+- Power BI data modeling and DAX implementation
+- Building KPI-driven dashboards from transactional datasets
 
 It demonstrates end-to-end capability from raw data modeling to business-ready analytical reporting.
