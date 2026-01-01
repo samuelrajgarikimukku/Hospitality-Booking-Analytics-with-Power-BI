@@ -55,6 +55,7 @@ This section shows the final Power BI dashboard built on the hospitality booking
 
 <img width="954" height="573" alt="image" src="https://github.com/user-attachments/assets/bb5cc0bb-28ab-4d80-bcf5-1ce655008a18" />
 
+[DASH BOARD LINK (ACCESS DASHBOARD HERE)](https://app.powerbi.com/singleSignOn?pbi_source=desktop&ru=https%3A%2F%2Fapp.powerbi.com%2Fgroups%2Fme%2Freports%2F27c1b378-180b-4bae-bc02-36a055341ceb%3Fpbi_source%3Ddesktop%26noSignUpCheck%3D1)
 
 ## Tools and Technologies
 
