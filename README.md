@@ -50,12 +50,11 @@ The design supports both summary-level monitoring and detailed drill-down analys
 
 ## Dashboard Preview
 
-``` 
 
 This section shows the final Power BI dashboard built on the hospitality bookings dataset. It highlights key performance indicators, trends, and property-level metrics used for analysis.
 
-IMAGE HERE 
-```
+<img width="954" height="573" alt="image" src="https://github.com/user-attachments/assets/bb5cc0bb-28ab-4d80-bcf5-1ce655008a18" />
+
 
 ## Tools and Technologies
 
